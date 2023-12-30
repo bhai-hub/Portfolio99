@@ -80,10 +80,12 @@ nav{
     color: white;
 }
 
-.name101{
+.name101, .name{
     color: #01C38D;
     text-decoration: underline;
 }
+
+
 
 .sub{
     font-size: 30px;
