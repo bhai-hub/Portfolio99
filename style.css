@@ -394,6 +394,13 @@ nav{
         align-items: center;
     }
 
+    .toggle{
+        margin: 10px;
+        width: 90px;
+        background:transparent;
+        border: none;
+    }
+
     .hamBurger{
         display: flex;
         align-items: center;
@@ -405,8 +412,11 @@ nav{
     .bi:hover{
         color: #01C38D;
     }
-    input[type=checkbox]:checked ~ .navLink {
-        display: block;
-      }
+    .main_text{
+        font-size: 45px;
+    }
+    .sub{
+        font-size: 15px;
+    }
     
 }
