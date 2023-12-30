@@ -433,17 +433,30 @@ nav{
     }
     .a_text{
         width: 100%;
+        font-size: 15px;
+    }
+    .heading{
+        font-size: 20px;
     }
     .context_1{
-        font-size: 25px;
+        font-size: 12px;
     }
     .img1{
         height: 300px;
     }
 
+    .cards{
+        margin: 15px;
+    }
+    .name{
+        font-size: 15px;
+    }
+    .bar{
+        height: 18px;
+    }
+
     .contact{
         width: 100%;
     }
-
     
 }
