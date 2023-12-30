@@ -395,7 +395,7 @@ nav{
         background-color: #01C38D;
     }
     .home, #about, #skill, #project{
-        min-height: 450px;
+        min-height: 550px;
     }
     .custom{
         display: flex;
