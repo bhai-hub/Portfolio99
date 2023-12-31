@@ -161,17 +161,15 @@
     <section class="contact_footer box" id="contact">
       
       <div class="contact">
-        <form method="post">
+        <form>
           <label for="name">Enter full name</label>
           <input type="text" name="name" id="name">
           <label for="email">Enter email address</label>
           <input type="email" name="email" id="email">
           <label for="message">Message</label>
-          <textarea name="message" id="" cols="30" rows="10">
-
-          </textarea>
+          <textarea name="message" cols="30" rows="10" id="message"></textarea>
           <div class="button3">
-            <button type="submit" class="btn1">Send</button>
+            <button type="button" onclick="dataSend()" class="btn1">Send</button>
           </div>
         </form>
       </div>

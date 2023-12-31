@@ -7,7 +7,6 @@ function reveal(){
         var windowHeight = window.innerHeight;
         var revealTop = reveal[i].getBoundingClientRect().top
         var revealPoint = 150
-        console.log(windowHeight-revealPoint)
         if(revealTop < (windowHeight-revealPoint)){
             reveal[i].classList.add('active');
         } else{
@@ -20,4 +19,39 @@ $(document).ready(function(){
     $('.toggle').click(function() {
         $('.navLink').toggle();
     });
+
+    
     });
+
+
+
+    const dataSend = () =>{
+
+        const formData = {
+            name: document.getElementById('name').value,
+            email: document.getElementById('email').value,
+            message: document.getElementById('message').value
+        };
+    
+        console.log(formData)
+        fetch('https://api-22nr.onrender.com/api/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData)
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('API Response:', data);
+            alert('Data submitted successfully!');
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('Error submitting data.');
+        });
+
+    }
+    
+
+    
