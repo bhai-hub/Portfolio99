@@ -2,7 +2,6 @@ window.addEventListener('scroll', reveal)
 
 function reveal(){
     var reveal = document.querySelectorAll('.box')
-    console.log(reveal)
     for(var i = 0; i < reveal.length; i++){
         var windowHeight = window.innerHeight;
         var revealTop = reveal[i].getBoundingClientRect().top
@@ -33,7 +32,6 @@ $(document).ready(function(){
             message: document.getElementById('message').value
         };
     
-        console.log(formData)
         fetch('https://api-22nr.onrender.com/api/submit', {
             method: 'POST',
             headers: {
@@ -43,12 +41,11 @@ $(document).ready(function(){
         })
         .then(response => response.json())
         .then(data => {
-            console.log('API Response:', data);
-            alert('Data submitted successfully!');
+            alert('Request submitted successfully!');
         })
         .catch(error => {
             console.error('Error:', error);
-            alert('Error submitting data.');
+            alert('Error submitting request.');
         });
 
     }
